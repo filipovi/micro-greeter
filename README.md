@@ -5,8 +5,8 @@ based on Writing microservices with Go Micro https://medium.com/microhq/writing-
 
 ### Imports
 
-    go get -v import github.com/micro/go-micro
-    go get github.com/micro/protobuf/{proto,protoc-gen-go}
+    go get -v github.com/micro/go-micro
+    go get -v github.com/micro/protobuf/{proto,protoc-gen-go}
 
 ### Generate the proto sources 
 

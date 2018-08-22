@@ -4,8 +4,8 @@ import (
 	"context"
 	"log"
 
-	proto "github.com/filipovi/micro1/proto"
-	"github.com/micro/go-micro"
+	proto "github.com/filipovi/micro-greeter/proto"
+	micro "github.com/micro/go-micro"
 )
 
 // Greeter is a struct containing the name
