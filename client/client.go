@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	proto "github.com/filipovi/micro1/proto"
+	proto "github.com/filipovi/micro-greeter/proto"
 	micro "github.com/micro/go-micro"
 )
 
@@ -13,7 +13,7 @@ type Greeter struct{}
 
 func main() {
 	service := micro.NewService()
-	greeter := proto.NewGreeterClient("greeter", service.Client())
+	greeter := proto.NewGreeterService("greeter", service.Client())
 
 	// request the Hello method on the Greeter handler
 	rsp, err := greeter.Hello(context.TODO(), &proto.HelloRequest{
